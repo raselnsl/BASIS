@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#002f69</color>
+    <color name="colorPrimaryDark">#00053e</color>
+    <color name="colorAccent">#405798</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_like">#EFEFEF</color>
+    <color name="black">#000000</color>
+    <color name="gray_card">#4E4E5E</color>
+    <color name="light_card">#CACACA</color>
+    <color name="pop_up_card_color">#F1F1F1</color>
+    <color name="hintTextColor">#bdbdbd</color>
+    <color name="nogorThemeColor">#DA471F</color>
+    <color name="chipIconTint">#bdbdbd</color>
+    <color name="darkRed">#EF5350</color>
+    <color name="green">#4CAF50</color>
+    <color name="greenDark">#095C0D</color>
+
+
+    <color name="lightGreen">#C0FF8C</color>
+    <color name="lightYellow">#FFF78C</color>
+    <color name="bar3">#FFD08C</color>
+    <color name="bar4">#8CEAFF</color>
+    <color name="bar5">#FF8C9D</color>
+
+
+    <color name="bar6">#F06292</color>
+    <color name="bar7">#0097A7</color>
+    <color name="bar8">#FBC02D</color>
+    <color name="bar9">#00796B</color>
+    <color name="bar10">#512DA8</color>
+
+
+    <color name="leave_available">#1B5E20</color>
+    <color name="leave_not_available">#B71C1C</color>
+    <color name="grey">#bdbdbd</color>
+
+
+    <color name="processingColor">#6C757D</color>
+    <color name="approvedColor">#28a745</color>
+    <color name="declineColor">#dc3545</color>
+
 </resources>
