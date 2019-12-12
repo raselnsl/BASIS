@@ -10,6 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.FragMainBinding
@@ -50,10 +51,9 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
         val images = intArrayOf(
-            R.drawable.delete1,
-            R.drawable.delete2,
-            R.drawable.delete3,
-            R.drawable.delete4
+            R.drawable.slide1,
+            R.drawable.slide2,
+            R.drawable.slide3
         )
         for (i in images.indices) {
             flipperImages(images[i])
@@ -77,6 +77,7 @@ class MainFragment : Fragment() {
 
     fun flipperImages(image: Int) {
         val imageView = ImageView(context)
+        imageView.scaleType = ImageView.ScaleType.CENTER_CROP
         imageView.setBackgroundResource(image)
         binding.viewFlipper?.addView(imageView)
         binding.viewFlipper?.setFlipInterval(4000)
@@ -100,6 +101,18 @@ class MainFragment : Fragment() {
         binding.cvContactUs.startAnimation(animation6)
         binding.btnLogIn.startAnimation(buttonAnimation)
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnLogIn.setOnClickListener {
+            findNavController().navigate(R.id.nav_login)
+        }
+
+        binding.cvAboutUs.setOnClickListener {
+            findNavController().navigate(R.id.nav_about_us)
+        }
     }
 
 }
