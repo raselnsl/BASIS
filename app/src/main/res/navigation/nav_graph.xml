@@ -7,9 +7,13 @@
 
     <fragment
         android:id="@+id/nav_login"
-        android:name="com.nogorsolutions.basis.ui.FragLogin"
+        android:name="com.nogorsolutions.basis.ui.login.FragLogin"
         android:label="@string/menu_home"
-        tools:layout="@layout/frag_login" />
+        tools:layout="@layout/frag_login" >
+        <action
+            android:id="@+id/action_nav_login_to_signUpFragment"
+            app:destination="@id/nav_signup" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -25,7 +29,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.nogorsolutions.basis.ui.home.HomeFragment"
-        android:label="frag_home"
+        android:label="Home"
         tools:layout="@layout/frag_home" />
     <fragment
         android:id="@+id/nav_main"
@@ -61,4 +65,9 @@
         android:name="com.nogorsolutions.basis.ui.about_bangladesh_ict_sector.AboutBangladeshICTSectorFragment"
         android:label="About Bangladesh ICT Sector"
         tools:layout="@layout/frag_about_bangladesh_ictsector" />
+    <fragment
+        android:id="@+id/nav_signup"
+        tools:layout="@layout/frag_sign_up"
+        android:name="com.nogorsolutions.basis.ui.sign_up.SignUpFragment"
+        android:label="SignUpFragment" />
 </navigation>

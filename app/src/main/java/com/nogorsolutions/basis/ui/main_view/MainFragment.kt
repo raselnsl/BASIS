@@ -63,6 +63,8 @@ class MainFragment : Fragment() {
         animation1 = AnimationUtils.loadAnimation(context, R.anim.card_animation)
         buttonAnimation = AnimationUtils.loadAnimation(context, R.anim.button_animation)
 
+
+
     }
 
     fun flipperImages(image: Int) {
