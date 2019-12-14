@@ -39,11 +39,21 @@
         android:label="About Us" />
     <fragment
         android:id="@+id/nav_profile"
+        tools:layout="@layout/frag_profile"
         android:name="com.nogorsolutions.basis.ui.profile.ProfileFragment"
         android:label="Profile" />
     <fragment
         android:id="@+id/nav_service"
         android:name="com.nogorsolutions.basis.ui.service.ServiceFrag"
         android:label="frag_service"
-        tools:layout="@layout/frag_service" />
+        tools:layout="@layout/frag_service" >
+        <action
+            android:id="@+id/action_nav_service_to_generalServicesFragment"
+            app:destination="@id/generalServicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalServicesFragment"
+        android:name="com.nogorsolutions.basis.ui.general_services.GeneralServicesFragment"
+        android:label="frag_general_services"
+        tools:layout="@layout/frag_general_services" />
 </navigation>
