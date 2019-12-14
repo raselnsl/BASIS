@@ -18,9 +18,9 @@
         tools:layout="@layout/frag_membership" />
 
     <fragment
-        android:id="@+id/nav_send"
+        android:id="@+id/nav_resources"
         android:name="com.nogorsolutions.basis.ui.resources.ResourcesFragment"
-        android:label="@string/menu_send"
+        android:label="@string/menu_resources"
         tools:layout="@layout/frag_resources" />
     <fragment
         android:id="@+id/nav_home"
@@ -39,11 +39,26 @@
         android:label="About Us" />
     <fragment
         android:id="@+id/nav_profile"
+        tools:layout="@layout/frag_profile"
         android:name="com.nogorsolutions.basis.ui.profile.ProfileFragment"
         android:label="Profile" />
     <fragment
         android:id="@+id/nav_service"
         android:name="com.nogorsolutions.basis.ui.service.ServiceFrag"
         android:label="frag_service"
-        tools:layout="@layout/frag_service" />
+        tools:layout="@layout/frag_service" >
+        <action
+            android:id="@+id/action_nav_service_to_generalServicesFragment"
+            app:destination="@id/nav_generalServices" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_generalServices"
+        android:name="com.nogorsolutions.basis.ui.general_services.GeneralServicesFragment"
+        android:label="General Services"
+        tools:layout="@layout/frag_general_services" />
+    <fragment
+        android:id="@+id/nav_about_bangladesh_ictsector"
+        android:name="com.nogorsolutions.basis.ui.about_bangladesh_ict_sector.AboutBangladeshICTSectorFragment"
+        android:label="About Bangladesh ICT Sector"
+        tools:layout="@layout/frag_about_bangladesh_ictsector" />
 </navigation>
