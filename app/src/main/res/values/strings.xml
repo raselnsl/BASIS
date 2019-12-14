@@ -21,4 +21,16 @@
     <string name="demo_email">mustafizur@nogorsolutions.com</string>
     <string name="notification">Notificaiton</string>
     <string name="mail">Mail</string>
+    <string name="about_bangladesh_ict_sector">“Digital Bangladesh” is an integral part of the government’s Vision 2021-which
+promises a prosperous and equitable middle-income Bangladesh by its golden jubilee of independence.  \n\n\n
+
+Honorable Prime Minister Sheikh Hasina has outlined the Digital Bangladesh having four key priorities: \n\n
+i) developing human resources ready for the digital age; \n\n
+ii) connecting citizens in the ways most meaningful to them; \n\n
+iii) taking services to citizens’ doorsteps; and \n\n
+iv) making the private sector and market more productive and competitive through the use of digital technology. \n\n\n
+        ICT is the backbone of any digital initiative and it covers the vast area of information technology, communication technology and th telecommunication technology. The country is successfully leveraging this rising penetration and has earned $800 million in 2017 by exporting ICT products and services. \n\n
+
+On top of these, the total number of Internet Subscribers has reached 80.483 million at the end of December, 2017, can be seen as a consequentia blessing of the recent progressive steps taken by the present government and the growing ICT sector. \n\n\n</string>
+    <string name="menu_resources">Resources</string>
 </resources>

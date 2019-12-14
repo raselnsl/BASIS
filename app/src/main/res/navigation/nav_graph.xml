@@ -18,9 +18,9 @@
         tools:layout="@layout/frag_membership" />
 
     <fragment
-        android:id="@+id/nav_send"
+        android:id="@+id/nav_resources"
         android:name="com.nogorsolutions.basis.ui.resources.ResourcesFragment"
-        android:label="@string/menu_send"
+        android:label="@string/menu_resources"
         tools:layout="@layout/frag_resources" />
     <fragment
         android:id="@+id/nav_home"
@@ -49,11 +49,16 @@
         tools:layout="@layout/frag_service" >
         <action
             android:id="@+id/action_nav_service_to_generalServicesFragment"
-            app:destination="@id/generalServicesFragment" />
+            app:destination="@id/nav_generalServices" />
     </fragment>
     <fragment
-        android:id="@+id/generalServicesFragment"
+        android:id="@+id/nav_generalServices"
         android:name="com.nogorsolutions.basis.ui.general_services.GeneralServicesFragment"
-        android:label="frag_general_services"
+        android:label="General Services"
         tools:layout="@layout/frag_general_services" />
+    <fragment
+        android:id="@+id/nav_about_bangladesh_ictsector"
+        android:name="com.nogorsolutions.basis.ui.about_bangladesh_ict_sector.AboutBangladeshICTSectorFragment"
+        android:label="About Bangladesh ICT Sector"
+        tools:layout="@layout/frag_about_bangladesh_ictsector" />
 </navigation>

@@ -46,7 +46,7 @@ class ServiceFrag : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.cvGeneralService.setOnClickListener {
-            findNavController().navigate(R.id.generalServicesFragment)
+            findNavController().navigate(R.id.nav_generalServices)
         }
     }
 

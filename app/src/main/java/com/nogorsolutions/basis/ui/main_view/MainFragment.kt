@@ -20,11 +20,6 @@ class MainFragment : Fragment() {
     lateinit var imageAnimation: Animation
     lateinit var textAnimatin: Animation
     lateinit var animation1: Animation
-    lateinit var animation2: Animation
-    lateinit var animation3: Animation
-    lateinit var animation4: Animation
-    lateinit var animation5: Animation
-    lateinit var animation6: Animation
     lateinit var buttonAnimation: Animation
 
 
@@ -66,11 +61,6 @@ class MainFragment : Fragment() {
         imageAnimation = AnimationUtils.loadAnimation(context, R.anim.image_animation)
         textAnimatin = AnimationUtils.loadAnimation(context, R.anim.text_animation)
         animation1 = AnimationUtils.loadAnimation(context, R.anim.card_animation)
-        animation2 = AnimationUtils.loadAnimation(context, R.anim.card_animation2)
-        animation3 = AnimationUtils.loadAnimation(context, R.anim.card_animation3)
-        animation4 = AnimationUtils.loadAnimation(context, R.anim.card_animation4)
-        animation5 = AnimationUtils.loadAnimation(context, R.anim.card_animation5)
-        animation6 = AnimationUtils.loadAnimation(context, R.anim.card_animation6)
         buttonAnimation = AnimationUtils.loadAnimation(context, R.anim.button_animation)
 
     }
@@ -94,11 +84,11 @@ class MainFragment : Fragment() {
         binding.circleImageView.startAnimation(imageAnimation)
         binding.tvCESC.startAnimation(textAnimatin)
         binding.cvAboutUs.startAnimation(animation1)
-        binding.cvAdmission.startAnimation(animation2)
-        binding.cvAcademic.startAnimation(animation3)
-        binding.cvGallery.startAnimation(animation4)
-        binding.cvNotice.startAnimation(animation5)
-        binding.cvContactUs.startAnimation(animation6)
+        binding.cvResources.startAnimation(animation1)
+        binding.cvMembership.startAnimation(animation1)
+        binding.cvGallery.startAnimation(animation1)
+        binding.cvServices.startAnimation(animation1)
+        binding.cvContactUs.startAnimation(animation1)
         binding.btnLogIn.startAnimation(buttonAnimation)
 
     }
@@ -112,6 +102,12 @@ class MainFragment : Fragment() {
 
         binding.cvAboutUs.setOnClickListener {
             findNavController().navigate(R.id.nav_about_us)
+        }
+        binding.cvServices.setOnClickListener {
+            findNavController().navigate(R.id.nav_generalServices)
+        }
+        binding.cvResources.setOnClickListener {
+            findNavController().navigate(R.id.nav_resources)
         }
     }
 
