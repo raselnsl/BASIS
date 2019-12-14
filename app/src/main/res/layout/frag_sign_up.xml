@@ -55,13 +55,12 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="24dp"
                         android:gravity="center_horizontal"
                         android:text="Create OSSPID account"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvBasisTitle" />
@@ -92,7 +91,7 @@
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/tilEmail"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -103,16 +102,12 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tilName">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/dropdownGender"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:cursorVisible="false"
-                            android:focusable="false"
-                            android:paddingStart="8dp"
-                            android:paddingTop="@dimen/autocomplete_view"
-                            android:paddingEnd="8dp"
-                            android:paddingBottom="@dimen/autocomplete_view" />
+                            android:inputType="textPersonName"
+                            android:maxLength="100" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -125,7 +120,7 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="8dp"
-                        android:hint="Sex"
+                        android:hint="Gender"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tilEmail">
@@ -188,18 +183,17 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tvPasswordHeader">
 
+
                         <RadioButton
                             android:id="@+id/radio_pirates"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:onClick="onRadioButtonClicked"
                             android:text="Email" />
 
                         <RadioButton
                             android:id="@+id/radio_ninjas"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:onClick="onRadioButtonClicked"
                             android:text="Phone" />
                     </RadioGroup>
 

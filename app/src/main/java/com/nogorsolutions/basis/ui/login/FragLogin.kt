@@ -1,4 +1,4 @@
-package com.nogorsolutions.basis.ui
+package com.nogorsolutions.basis.ui.login
 
 
 import android.os.Bundle
@@ -36,6 +36,10 @@ class FragLogin : Fragment() {
 
         binding.btnLogIn.setOnClickListener {
             findNavController().navigate(R.id.nav_home)
+        }
+
+        binding.btnGoToSignUp.setOnClickListener {
+            findNavController().navigate(R.id.nav_signup)
         }
     }
 }

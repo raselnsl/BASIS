@@ -84,7 +84,8 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             if (destination.id in arrayOf(
                     R.id.nav_main,
-                    R.id.nav_login
+                    R.id.nav_login,
+                    R.id.nav_signup
                 )
             ){
                 toolbar.visibility = View.GONE
