@@ -70,4 +70,9 @@
         tools:layout="@layout/frag_sign_up"
         android:name="com.nogorsolutions.basis.ui.sign_up.SignUpFragment"
         android:label="SignUpFragment" />
+    <fragment
+        android:id="@+id/ourInitiativesFragment"
+        tools:layout="@layout/fragment_our_initiatives"
+        android:name="com.nogorsolutions.basis.ui.Initiatives.OurInitiativesFragment"
+        android:label="OurInitiativesFragment" />
 </navigation>

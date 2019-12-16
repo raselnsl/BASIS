@@ -48,14 +48,13 @@ class MainFragment : Fragment() {
         val images = intArrayOf(
             R.drawable.slide1,
             R.drawable.slide2,
-            R.drawable.slide3
+            R.drawable.slide3,
+            R.drawable.dutch_bangla
         )
         for (i in images.indices) {
             flipperImages(images[i])
         }
 
-        //marquee set
-        //tvCESC.isSelected = true
 
         // declare the Animation
         imageAnimation = AnimationUtils.loadAnimation(context, R.anim.image_animation)
@@ -84,11 +83,10 @@ class MainFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         binding.circleImageView.startAnimation(imageAnimation)
-        binding.tvCESC.startAnimation(textAnimatin)
         binding.cvAboutUs.startAnimation(animation1)
         binding.cvResources.startAnimation(animation1)
         binding.cvMembership.startAnimation(animation1)
-        binding.cvGallery.startAnimation(animation1)
+        binding.cvOurInitiatives.startAnimation(animation1)
         binding.cvServices.startAnimation(animation1)
         binding.cvContactUs.startAnimation(animation1)
         binding.btnLogIn.startAnimation(buttonAnimation)
@@ -110,6 +108,9 @@ class MainFragment : Fragment() {
         }
         binding.cvResources.setOnClickListener {
             findNavController().navigate(R.id.nav_resources)
+        }
+        binding.cvOurInitiatives.setOnClickListener {
+            findNavController().navigate(R.id.ourInitiativesFragment)
         }
     }
 
