@@ -75,6 +75,7 @@
                     android:layout_marginEnd="8dp"
                     android:text="Pay Service Payment"
                     android:textAllCaps="false"
+                    android:visibility="gone"
                     android:textSize="14sp"
                     app:backgroundTint="#EF5350"
                     app:layout_constraintBottom_toBottomOf="parent"

@@ -97,7 +97,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="16dp"
                                 app:srcCompat="@drawable/ic_info"
-                                android:tint="#33691E" />
+                                android:tint="#6dc8be" />
 
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="16dp"
                                 app:srcCompat="@drawable/ic_about"
-                                android:tint="#33691E" />
+                                android:tint="#6dc8be" />
 
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
@@ -178,7 +178,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="16dp"
                                 app:srcCompat="@drawable/ic_menu_send"
-                                android:tint="#33691E" />
+                                android:tint="#6dc8be" />
 
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
@@ -259,7 +259,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="16dp"
                                 app:srcCompat="@drawable/ic_menu_share"
-                                android:tint="#33691E" />
+                                android:tint="#6dc8be" />
 
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
@@ -298,7 +298,7 @@
                                 android:layout_marginTop="16dp"
                                 android:padding="8dp"
                                 app:srcCompat="@drawable/ic_contact_phone"
-                                android:tint="#33691E"
+                                android:tint="#6dc8be"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
@@ -332,7 +332,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#33691E"
+            android:backgroundTint="#6dc8be"
             android:gravity="center"
             android:text="Member Login"
             android:textAllCaps="false"
