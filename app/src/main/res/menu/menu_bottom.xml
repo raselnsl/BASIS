@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/memberLogin"
+        android:title="Home"
+        app:showAsAction="always"
+       android:icon="@drawable/home"
+        android:enabled="true"/>
+
+    <item android:id="@+id/becomeMember"
+        android:title="Member Login"
+        app:showAsAction="always"
+        android:icon="@drawable/login"
+        android:enabled="true"/>
+
+    <item android:id="@+id/b2b"
+        android:title="Become a Member"
+        android:icon="@drawable/facebook"
+        app:showAsAction="always"
+        android:enabled="true"/>
+
+</menu>

@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<!--        <variable-->
-<!--            name="alok "-->
-<!--            type="" />-->
+
 
     </data>
 
@@ -15,6 +13,7 @@
         android:layout_height="match_parent">
 
         <ScrollView
+            android:id="@+id/scroolView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -26,7 +25,7 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#243397"
+                    android:background="#1976D2"
                     app:layout_constraintTop_toTopOf="parent"
                     app:menu="@menu/menu_home"
                     app:title="BASIS"
@@ -36,7 +35,7 @@
                 </androidx.appcompat.widget.Toolbar>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardView"
+                    android:id="@+id/cvViewFlipper"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:layout_marginTop="4dp"
@@ -75,23 +74,11 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/tvMembers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:text="MEMBERS"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/cardView" />
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cvOurMembers"
                     android:layout_width="80dp"
                     android:layout_height="110dp"
-                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="0dp"
@@ -99,7 +86,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/cvGeneralMembers"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvMembers">
+                    app:layout_constraintTop_toBottomOf="@id/cvViewFlipper">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -107,21 +94,18 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/ivOurMembers"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:layout_marginTop="8dp"
-
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                           app:srcCompat="@drawable/ic_our_members" />
+                            app:srcCompat="@drawable/ic_our_members" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/tvOurMembersNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
                             android:text="1200"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -133,7 +117,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
                             android:gravity="center"
                             android:text="OUR \n MEMBERS"
@@ -158,7 +141,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/cvAssociateMembers"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/cvOurMembers"
-                    app:layout_constraintTop_toBottomOf="@id/tvMembers">
+                    app:layout_constraintTop_toBottomOf="@id/cvViewFlipper">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -166,21 +149,19 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/ivGeneralMembers"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:layout_marginTop="8dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@color/colorPrimary" />
+                            app:srcCompat="@drawable/ic_general_members" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/tvGeneralMembersNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="1200"
+                            android:text="700"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@id/ivGeneralMembers"
@@ -191,10 +172,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
-                            android:gravity="center"
-                            android:text="GENERAL \n MEMBERS"
+                            android:text="GENERAL \nMEMBERS"
                             android:textSize="12sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@id/tvGeneralMembersNumber"
@@ -216,7 +195,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/cvInternationalMembers"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/cvGeneralMembers"
-                    app:layout_constraintTop_toBottomOf="@id/tvMembers">
+                    app:layout_constraintTop_toBottomOf="@id/cvViewFlipper">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -224,21 +203,19 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/ivAssociateMembers"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:layout_marginTop="8dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@color/colorPrimary" />
+                            app:srcCompat="@drawable/ic_associate_members" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/tvAssociateMembersNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="1200"
+                            android:text="500"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@id/ivAssociateMembers"
@@ -249,10 +226,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
                             android:gravity="center"
-                            android:text="ASSOCIATE MEMBERS"
+                            android:text="ASSOCIATE \n MEMBERS"
                             android:textSize="12sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@id/tvAssociateMembersNumber"
@@ -275,7 +251,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/cvAssociateMembers"
-                    app:layout_constraintTop_toBottomOf="@id/tvMembers">
+                    app:layout_constraintTop_toBottomOf="@id/cvViewFlipper">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -283,21 +259,19 @@
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/ivInternationalMembers"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="8dp"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             android:layout_marginTop="8dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@color/colorPrimary" />
+                            app:srcCompat="@drawable/ic_internation_members" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:id="@+id/tvInternationalMembersNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="1200"
+                            android:text="0"
                             android:textSize="20sp"
                             android:textStyle="bold"
                             app:layout_constraintEnd_toEndOf="@id/ivInternationalMembers"
@@ -308,7 +282,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
                             android:layout_marginBottom="8dp"
                             android:gravity="center"
                             android:text="INTERNATIONAL \n MEMBERS"
@@ -359,7 +332,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#33691E"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_info" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -400,7 +373,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#33691E"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_about" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -442,7 +415,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#33691E"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_menu_send" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -459,47 +432,6 @@
 
                     </com.google.android.material.card.MaterialCardView>
 
-                    <!-- <com.google.android.material.card.MaterialCardView
-                         android:id="@+id/cvGallery"
-                         android:layout_width="0dp"
-                         android:layout_height="140dp"
-                         android:layout_columnWeight="1"
-                         android:layout_marginLeft="8dp"
-                         android:layout_marginRight="2dp"
-                         android:layout_marginBottom="8dp"
-                         app:cardCornerRadius="8dp"
-                         app:cardElevation="8dp">
-
-                         <androidx.constraintlayout.widget.ConstraintLayout
-                             android:layout_width="match_parent"
-                             android:layout_height="match_parent">
-
-                             <ViewFlipper
-                                 android:id="@+id/viewFlipper"
-                                 android:layout_width="match_parent"
-                                 android:layout_height="match_parent"
-                                 android:layout_marginBottom="36dp"
-                                 app:layout_constraintBottom_toBottomOf="parent"
-                                 app:layout_constraintEnd_toEndOf="parent"
-                                 app:layout_constraintStart_toStartOf="parent"
-                                 app:layout_constraintTop_toTopOf="parent" />
-
-                             <com.google.android.material.textview.MaterialTextView
-                                 android:id="@+id/tvGallery"
-                                 android:layout_width="wrap_content"
-                                 android:layout_height="wrap_content"
-                                 android:layout_marginBottom="8dp"
-                                 android:gravity="center"
-                                 android:text="Gallery"
-                                 android:textColor="@color/colorPrimary"
-                                 android:textSize="16sp"
-                                 android:textStyle="bold"
-                                 app:layout_constraintBottom_toBottomOf="parent"
-                                 app:layout_constraintEnd_toEndOf="parent"
-                                 app:layout_constraintStart_toStartOf="parent" />
-
-                         </androidx.constraintlayout.widget.ConstraintLayout>
-                     </com.google.android.material.card.MaterialCardView>-->
 
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/cvResources"
@@ -524,7 +456,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#33691E"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_menu_share" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -566,7 +498,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#33691E"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_local_library" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -606,7 +538,7 @@
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="8dp"
                                 android:padding="8dp"
-                                android:tint="#228678"
+                                android:tint="#6DC8BE"
                                 app:srcCompat="@drawable/ic_contact_phone" />
 
                             <com.google.android.material.textview.MaterialTextView
@@ -626,28 +558,61 @@
 
                 </GridLayout>
 
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvWhatsNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="#0A0A0A"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gridLayout">
 
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvWhatsNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="What's New ?"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+                </com.google.android.material.card.MaterialCardView>
 
-
-
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="horizontal"
+                    app:reverseLayout="false"
+                    app:layout_constraintTop_toBottomOf="@id/cvWhatsNew"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/btnLogIn"
-            android:layout_width="wrap_content"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="#33691E"
-            android:gravity="center"
-            android:text="Member Login"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            app:layout_constraintTop_toBottomOf="@id/scroolView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_bottom"
+            android:layout_marginTop="8dp"
+            app:itemBackground="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"/>
+
+
+
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
