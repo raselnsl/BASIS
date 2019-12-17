@@ -12,10 +12,12 @@ import android.widget.Adapter
 import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.FragMainBinding
+import com.nogorsolutions.basis.util.SpacingItemDecoration
 
 
 class MainFragment : Fragment() {
@@ -24,7 +26,6 @@ class MainFragment : Fragment() {
     lateinit var textAnimatin: Animation
     lateinit var animation1: Animation
     lateinit var buttonAnimation: Animation
-
 
     private lateinit var binding: FragMainBinding
     private lateinit var viewModel: MainViewModel
@@ -41,12 +42,21 @@ class MainFragment : Fragment() {
                      false
                  )
 
-        binding.recyclerView.also {
+        binding.rvWhatsNew.also {
             it.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
             it.setHasFixedSize(true)
             it.adapter=WhatsNewRecyclerViewAdapter()
+
         }
 
+        binding.rvBasisGallery.also {
+            it.setHasFixedSize(true)
+            it.adapter=BASISGalleryRecyclerViewAdapter()
+
+            val topSpace = SpacingItemDecoration (8)
+            it.addItemDecoration(topSpace)
+
+        }
         return binding.root
     }
 

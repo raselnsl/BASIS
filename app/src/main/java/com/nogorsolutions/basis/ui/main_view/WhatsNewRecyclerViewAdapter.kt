@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.ItemWhatsNewBinding
-import java.util.zip.Inflater
+
 
 class WhatsNewRecyclerViewAdapter() :
     RecyclerView.Adapter<WhatsNewRecyclerViewAdapter.ViewHolder>() {
