@@ -547,8 +547,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 app:cardCornerRadius="0dp"
-                app:cardBackgroundColor="#090808"
-                app:cardElevation="8dp"
+                app:cardElevation="0dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/gridLayout">
 
@@ -558,7 +557,7 @@
                     android:layout_height="wrap_content"
                     android:padding="4dp"
                     android:text="What's New ?"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -587,8 +586,7 @@
                 android:layout_marginTop="8dp"
                 android:paddingBottom="8dp"
                 app:cardCornerRadius="0dp"
-               app:cardElevation="8dp"
-                app:cardBackgroundColor="#090808"
+                app:cardElevation="0dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rvWhatsNew">
 
@@ -602,7 +600,7 @@
                         android:layout_height="wrap_content"
                         android:padding="4dp"
                         android:text="BASIS Gallery"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"

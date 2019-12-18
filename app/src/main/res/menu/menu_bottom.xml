@@ -2,24 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/home"
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
         android:title="Home"
-        app:showAsAction="always"
-       android:icon="@drawable/home"
-        android:enabled="true"/>
-
-    <item android:id="@+id/becomeMember"
-        android:title="Become a Member"
-        android:icon="@drawable/ic_become_member"
-        app:showAsAction="always"
-        android:enabled="true"/>
-
-    <item android:id="@+id/memberLogin"
-        android:title="Member Login"
-        app:showAsAction="always"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_login"
+        android:enabled="true"
         android:icon="@drawable/login"
-        android:enabled="true"/>
-
+        android:title="Member Login"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_registration"
+        android:enabled="true"
+        android:icon="@drawable/ic_become_member"
+        android:title="Become a Member"
+        app:showAsAction="always" />
 
 
 </menu>

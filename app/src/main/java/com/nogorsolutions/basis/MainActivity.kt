@@ -44,8 +44,9 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.home,
-                R.id.becomeMember,
-                R.id.memberLogin
+                R.id.nav_login,
+                R.id.nav_registration
+
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

@@ -83,4 +83,9 @@
         tools:layout="@layout/fragment_our_initiatives"
         android:name="com.nogorsolutions.basis.ui.Initiatives.OurInitiativesFragment"
         android:label="OurInitiativesFragment" />
+    <fragment
+        android:id="@+id/nav_registration"
+        android:name="com.nogorsolutions.basis.ui.registration.RegistrationFragment"
+        android:label="Member Registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>
