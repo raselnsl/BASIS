@@ -8,12 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.Adapter
 import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.FragMainBinding
+import com.nogorsolutions.basis.util.SpacingItemDecoration
+
 
 class MainFragment : Fragment() {
 
@@ -21,7 +26,6 @@ class MainFragment : Fragment() {
     lateinit var textAnimatin: Animation
     lateinit var animation1: Animation
     lateinit var buttonAnimation: Animation
-
 
     private lateinit var binding: FragMainBinding
     private lateinit var viewModel: MainViewModel
@@ -38,6 +42,21 @@ class MainFragment : Fragment() {
                      false
                  )
 
+        binding.rvWhatsNew.also {
+            it.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+            it.setHasFixedSize(true)
+            it.adapter=WhatsNewRecyclerViewAdapter()
+
+        }
+
+        binding.rvBasisGallery.also {
+            it.setHasFixedSize(true)
+            it.adapter=BASISGalleryRecyclerViewAdapter()
+
+            val topSpace = SpacingItemDecoration (8)
+            it.addItemDecoration(topSpace)
+
+        }
         return binding.root
     }
 
@@ -89,16 +108,14 @@ class MainFragment : Fragment() {
         binding.cvOurInitiatives.startAnimation(animation1)
         binding.cvServices.startAnimation(animation1)
         binding.cvContactUs.startAnimation(animation1)
-        binding.btnLogIn.startAnimation(buttonAnimation)
+
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnLogIn.setOnClickListener {
-            findNavController().navigate(R.id.nav_login)
-        }
+
 
         binding.cvAboutUs.setOnClickListener {
             findNavController().navigate(R.id.nav_about_us)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_main"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_login"
+        android:enabled="true"
+        android:icon="@drawable/login"
+        android:title="Member Login"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_registration"
+        android:enabled="true"
+        android:icon="@drawable/ic_become_member"
+        android:title="Become a Member"
+        app:showAsAction="always" />
+
+
+</menu>

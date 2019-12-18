@@ -8,19 +8,11 @@
     <fragment
         android:id="@+id/nav_login"
         android:name="com.nogorsolutions.basis.ui.login.FragLogin"
-        android:label="@string/menu_home"
+        android:label="Member Login"
         tools:layout="@layout/frag_login" >
         <action
             android:id="@+id/action_nav_login_to_signUpFragment"
             app:destination="@id/nav_signup" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_activity_main"
-        android:name="com.nogorsolutions.basis.ui.login.FragLogin"
-        android:label="@string/menu_home"
-        tools:layout="@layout/activity_main" >
-
     </fragment>
 
     <fragment
@@ -43,7 +35,7 @@
         android:id="@+id/nav_main"
         tools:layout="@layout/frag_main"
         android:name="com.nogorsolutions.basis.ui.main_view.MainFragment"
-        android:label="MainFragment" />
+        android:label="BASIS" />
     <fragment
         android:id="@+id/nav_about_us"
         tools:layout="@layout/frag_about"
@@ -83,4 +75,9 @@
         tools:layout="@layout/fragment_our_initiatives"
         android:name="com.nogorsolutions.basis.ui.Initiatives.OurInitiativesFragment"
         android:label="OurInitiativesFragment" />
+    <fragment
+        android:id="@+id/nav_registration"
+        android:name="com.nogorsolutions.basis.ui.registration.RegistrationFragment"
+        android:label="Member Registration"
+        tools:layout="@layout/fragment_registration" />
 </navigation>
