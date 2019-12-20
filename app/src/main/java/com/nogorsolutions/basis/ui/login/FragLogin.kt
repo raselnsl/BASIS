@@ -1,6 +1,7 @@
 package com.nogorsolutions.basis.ui.login
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,9 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import com.nogorsolutions.basis.MainActivity
 
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.FragLoginBinding
+import com.nogorsolutions.basis.ui.DashboardActivity
 
 
 class FragLogin : Fragment() {
@@ -35,7 +38,9 @@ class FragLogin : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnLogIn.setOnClickListener {
-            findNavController().navigate(R.id.nav_home)
+           /* findNavController().navigate(R.id.nav_home)*/
+          val intent = Intent(context, DashboardActivity::class.java)
+            startActivity(intent)
         }
 
         binding.btnGoToSignUp.setOnClickListener {

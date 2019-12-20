@@ -110,7 +110,7 @@
                    android:layout_height="wrap_content" />
            </com.google.android.material.textfield.TextInputLayout>
 
-           <com.google.android.material.textfield.TextInputLayout
+          <!-- <com.google.android.material.textfield.TextInputLayout
                android:id="@+id/tilStates"
                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                android:layout_width="0dp"
@@ -230,7 +230,7 @@
                    android:id="@+id/etAddress"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content" />
-           </com.google.android.material.textfield.TextInputLayout>
+           </com.google.android.material.textfield.TextInputLayout>-->
 
            <com.google.android.material.textfield.TextInputLayout
                android:id="@+id/tilPassword"
@@ -245,8 +245,8 @@
                app:boxCornerRadiusTopStart="8dp"
                app:layout_constraintEnd_toStartOf="@id/tilConfirmPassword"
                app:layout_constraintHorizontal_bias="0.5"
-               app:layout_constraintStart_toStartOf="@id/tilAddress"
-               app:layout_constraintTop_toBottomOf="@id/tilAddress">
+               app:layout_constraintStart_toStartOf="@id/tilMobile"
+               app:layout_constraintTop_toBottomOf="@id/tilMobile">
 
                <com.google.android.material.textfield.TextInputEditText
                    android:id="@+id/etPassword"
@@ -269,7 +269,7 @@
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintHorizontal_bias="0.5"
                app:layout_constraintStart_toEndOf="@+id/tilPassword"
-               app:layout_constraintTop_toBottomOf="@id/tilAddress"
+               app:layout_constraintTop_toBottomOf="@id/tilMobile"
                app:layout_constraintTop_toTopOf="@id/tilPassword">
 
                <com.google.android.material.textfield.TextInputEditText
@@ -284,10 +284,12 @@
                android:layout_height="wrap_content"
                android:layout_marginTop="24dp"
                android:layout_marginEnd="8dp"
-               android:backgroundTint="#192A91"
+               android:backgroundTint="#6DC8BE"
                android:text="Submit"
                android:textAllCaps="false"
                android:textSize="18sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:layout_marginBottom="8dp"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintTop_toBottomOf="@id/tilConfirmPassword" />
 
