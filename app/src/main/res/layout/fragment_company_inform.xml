@@ -8,16 +8,16 @@
     </data>
 
 
-        <ScrollView
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".ui.CompanyInformFragment">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.CompanyInformFragment">
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvCompanyInformation"
@@ -130,7 +130,8 @@
                     android:id="@+id/etYear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:editable="false" />
+                    android:editable="false"
+                    android:paddingStart="8dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,7 +156,8 @@
                     android:id="@+id/etMonth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:editable="false" />
+                    android:editable="false"
+                    android:paddingStart="8dp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -248,6 +250,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:hint="Barishal"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
@@ -284,7 +287,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="24dp"
                 app:boxCornerRadiusBottomEnd="8dp"
                 app:boxCornerRadiusBottomStart="8dp"
                 app:boxCornerRadiusTopEnd="8dp"
@@ -319,9 +322,9 @@
                 android:text="Same As Registered Address"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/checkBox"
                 app:layout_constraintStart_toEndOf="@id/checkBox"
-                app:layout_constraintTop_toTopOf="@id/checkBox"
-                app:layout_constraintBottom_toBottomOf="@id/checkBox" />
+                app:layout_constraintTop_toTopOf="@id/checkBox" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvCurrentAddress"
@@ -363,12 +366,16 @@
                 android:id="@+id/btnSaveandCotinuetoStep"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                app:layout_constraintTop_toBottomOf="@id/tilCurrentAddress"
-                app:layout_constraintStart_toStartOf="@id/tilCurrentAddress"
                 android:layout_marginTop="16sp"
-                android:text="Save and Cotinue to Step" />
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#6DC8BE"
+                android:text="Save and Continue to Step"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tilCurrentAddress"
+                app:layout_constraintTop_toBottomOf="@id/tilCurrentAddress" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>

@@ -29,7 +29,7 @@ class CompanyInformFragment : Fragment() {
             false
         )
         binding.btnSaveandCotinuetoStep.setOnClickListener {
-            findNavController().navigate(R.id.nav_company_information)
+            findNavController().navigate(R.id.nav_payment_information)
         }
         return binding.root
     }

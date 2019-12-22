@@ -88,16 +88,21 @@
     <fragment
         android:id="@+id/nav_otp"
         android:name="com.nogorsolutions.basis.ui.OTPValidationFragment"
-        android:label="fragment_otpvalidation"
+        android:label="OTP Validation"
         tools:layout="@layout/fragment_otpvalidation" />
     <fragment
         android:id="@+id/nav_company_information"
         android:name="com.nogorsolutions.basis.ui.CompanyInformFragment"
-        android:label="fragment_company_inform"
+        android:label="Company Information"
         tools:layout="@layout/fragment_company_inform" />
     <fragment
         android:id="@+id/nav_payment_information"
         android:name="com.nogorsolutions.basis.ui.PaymentInformationFragment"
-        android:label="fragment_payment_information"
+        android:label="Payment Information"
         tools:layout="@layout/fragment_payment_information" />
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.nogorsolutions.basis.ui.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" />
 </navigation>

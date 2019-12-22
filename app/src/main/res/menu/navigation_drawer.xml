@@ -7,7 +7,7 @@
     <item android:icon="@drawable/twitter"
         android:title="Membership"/>
 
-    <item android:icon="@drawable/facebook"
+    <item android:icon="@drawable/ic_menu_send"
         android:title="Services"/>
 
 </menu>
