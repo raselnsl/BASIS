@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 
 import com.nogorsolutions.basis.R
 import com.nogorsolutions.basis.databinding.FragmentRegistrationBinding
@@ -29,6 +30,13 @@ class RegistrationFragment : Fragment() {
            container,
            false
        )
+
+       binding.btnSubmit.setOnClickListener {
+           findNavController().navigate(R.id.nav_otp)
+       }
+
+
+
        return binding.root
     }
 

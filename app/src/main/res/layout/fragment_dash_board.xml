@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.DashBoardFragment">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvCompanyInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvCompanyInformation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Company Information"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCompanyInformation" />
+
+                    <TextView
+                        android:id="@+id/tvNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Nogor Solutions Limited"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBASISMembershipNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="BASIS Membership No"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/tvName"
+                        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                    <TextView
+                        android:id="@+id/tvBASISMembershipNoValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="A189"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@id/tvBASISMembershipNo" />
+
+                    <TextView
+                        android:id="@+id/tvYearofEstablishment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Year of Establishment"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/tvBASISMembershipNo"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBASISMembershipNo" />
+
+                    <TextView
+                        android:id="@+id/tvYearofEstablishmentValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="March 2009"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@id/tvYearofEstablishment" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/tvYearofEstablishment"
+                        app:layout_constraintTop_toBottomOf="@id/tvYearofEstablishment" />
+
+                    <TextView
+                        android:id="@+id/tvAddressValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="House # 69, Road # 8, Block # d, Niketon, Gulshan, Dhaka-1212, Dhaka - 1212"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@id/tvAddress" />
+
+                    <TextView
+                        android:id="@+id/tvContactNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Contact No"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/tvAddress"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAddressValue" />
+
+                    <TextView
+                        android:id="@+id/tvContactNoValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="9859075"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@id/tvContactNo" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="E-mail"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/tvContactNo"
+                        app:layout_constraintTop_toBottomOf="@+id/tvContactNo" />
+
+                    <TextView
+                        android:id="@+id/tvEmailValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="info@nogorsolutions.com"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/barrier"
+                        app:layout_constraintTop_toTopOf="@id/tvEmail" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/barrier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="end"
+                        app:constraint_referenced_ids="tvName,tvBASISMembershipNo,tvYearofEstablishment,tvAddress,tvContactNo,tvEmail" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvMyService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp"
+                app:layout_constraintTop_toBottomOf="@id/cvCompanyInformation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvMyService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="My Service"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivBasisBracBankCreditCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvMyService"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBASISBRACBankCreditCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="BASIS BRAC Bank Credit Card"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivBasisBracBankCreditCard"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMyService"
+                        app:layout_constraintTop_toTopOf="@id/ivBasisBracBankCreditCard" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSCBERQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivBasisBracBankCreditCard"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSCBERQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="SCB ERQ"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivSCBERQ"
+                        app:layout_constraintTop_toTopOf="@id/ivSCBERQ" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivImportThroughEDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivSCBERQ"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvImportThrougheDelevery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                       android:textStyle="bold"
+                        android:text="Import Through eDelevery"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivImportThroughEDelivery"
+                        app:layout_constraintTop_toTopOf="@id/ivImportThroughEDelivery" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRecommendationLetterForTaxVat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvImportThrougheDelevery"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvRecommendationLetterForTaxVat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:text="Recommendation Letter for Tax/Vat"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivRecommendationLetterForTaxVat"
+                        app:layout_constraintTop_toTopOf="@id/ivRecommendationLetterForTaxVat" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvAppliedStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp"
+                app:layout_constraintTop_toBottomOf="@id/cvMyService">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvAppliedStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Applied Status"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/viewItem1"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#6DC8BE"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivItem1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/applied_status_shape"
+                        app:layout_constraintBottom_toBottomOf="@id/viewItem1"
+                        app:layout_constraintStart_toEndOf="@id/viewItem1"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus"
+                        app:layout_constraintTop_toTopOf="@id/viewItem1" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvItem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Item 1"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/viewItem1"
+                        app:layout_constraintStart_toStartOf="@id/viewItem1"
+                        app:layout_constraintTop_toBottomOf="@id/viewItem1" />
+
+                    <View
+                        android:id="@+id/viewItem2"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#6DC8BE"
+                        app:layout_constraintStart_toEndOf="@id/ivItem1"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivItem2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/applied_status_shape"
+                        app:layout_constraintBottom_toBottomOf="@id/viewItem2"
+                        app:layout_constraintStart_toEndOf="@id/viewItem2"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus"
+                        app:layout_constraintTop_toTopOf="@id/viewItem2" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Item 2"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/viewItem2"
+                        app:layout_constraintStart_toStartOf="@id/viewItem2"
+                        app:layout_constraintTop_toBottomOf="@id/viewItem2" />
+
+                    <View
+                        android:id="@+id/viewItem3"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#6DC8BE"
+                        app:layout_constraintStart_toEndOf="@id/ivItem2"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivItem3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/applied_status_shape"
+                        app:layout_constraintBottom_toBottomOf="@id/viewItem3"
+                        app:layout_constraintStart_toEndOf="@id/viewItem3"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus"
+                        app:layout_constraintTop_toTopOf="@id/viewItem3" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvItem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Item 3"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/viewItem3"
+                        app:layout_constraintStart_toStartOf="@id/viewItem3"
+                        app:layout_constraintTop_toBottomOf="@id/viewItem3" />
+
+                    <View
+                        android:id="@+id/viewItem4"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#6DC8BE"
+                        app:layout_constraintStart_toEndOf="@id/ivItem3"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivItem4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/applied_status_shape"
+                        app:layout_constraintBottom_toBottomOf="@id/viewItem4"
+                        app:layout_constraintStart_toEndOf="@id/viewItem4"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus"
+                        app:layout_constraintTop_toTopOf="@id/viewItem4" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvItem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Item 4"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/viewItem4"
+                        app:layout_constraintStart_toStartOf="@id/viewItem4"
+                        app:layout_constraintTop_toBottomOf="@id/viewItem4" />
+
+                    <View
+                        android:id="@+id/viewItem5"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="24dp"
+                        android:background="#6DC8BE"
+                        app:layout_constraintStart_toEndOf="@id/ivItem4"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivItem5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/applied_status_shape"
+                        app:layout_constraintBottom_toBottomOf="@id/viewItem5"
+                        app:layout_constraintStart_toEndOf="@id/viewItem5"
+                        app:layout_constraintTop_toBottomOf="@id/tvAppliedStatus"
+                        app:layout_constraintTop_toTopOf="@id/viewItem5" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvItem5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Item 5"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/viewItem5"
+                        app:layout_constraintStart_toStartOf="@id/viewItem5"
+                        app:layout_constraintTop_toBottomOf="@id/viewItem5" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvPaymentInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="8dp"
+                app:layout_constraintTop_toBottomOf="@id/cvAppliedStatus">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPaymentInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Payment Info"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivBasisBracBankCreditCar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvPaymentInfo"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvBASISBRACBankCreditCar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                       android:textStyle="bold"
+                        android:text="BASIS BRAC Bank Credit Card"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivBasisBracBankCreditCar"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPaymentInfo"
+                        app:layout_constraintTop_toTopOf="@id/ivBasisBracBankCreditCar" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSCBER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivBasisBracBankCreditCar"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSCBER"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="SCB ERQ"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivSCBER"
+                        app:layout_constraintTop_toTopOf="@id/ivSCBER" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivImportThroughEDeliver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivSCBER"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvImportThrougheDelever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:text="Import Through eDelevery"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivImportThroughEDeliver"
+                        app:layout_constraintTop_toTopOf="@id/ivImportThroughEDeliver" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivRecommendationLetterForTaxVa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvImportThrougheDelever"
+                        app:srcCompat="@drawable/ic_menu_send" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvRecommendationLetterForTaxVa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:text="Recommendation Letter for Tax/Vat"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.12"
+                        app:layout_constraintStart_toEndOf="@id/ivRecommendationLetterForTaxVa"
+                        app:layout_constraintTop_toTopOf="@id/ivRecommendationLetterForTaxVa" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</layout>

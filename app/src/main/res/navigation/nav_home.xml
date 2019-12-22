@@ -80,4 +80,29 @@
         android:name="com.nogorsolutions.basis.ui.registration.RegistrationFragment"
         android:label="Member Registration"
         tools:layout="@layout/fragment_registration" />
+    <activity
+        android:id="@+id/nav_dashboard"
+        android:name="com.nogorsolutions.basis.ui.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+    <fragment
+        android:id="@+id/nav_otp"
+        android:name="com.nogorsolutions.basis.ui.OTPValidationFragment"
+        android:label="OTP Validation"
+        tools:layout="@layout/fragment_otpvalidation" />
+    <fragment
+        android:id="@+id/nav_company_information"
+        android:name="com.nogorsolutions.basis.ui.CompanyInformFragment"
+        android:label="Company Information"
+        tools:layout="@layout/fragment_company_inform" />
+    <fragment
+        android:id="@+id/nav_payment_information"
+        android:name="com.nogorsolutions.basis.ui.PaymentInformationFragment"
+        android:label="Payment Information"
+        tools:layout="@layout/fragment_payment_information" />
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.nogorsolutions.basis.ui.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" />
 </navigation>
