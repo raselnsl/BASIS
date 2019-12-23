@@ -81,6 +81,10 @@
     <fragment
         android:id="@+id/ourInitiativesFragment"
         android:name="com.nogorsolutions.basis.ui.Initiatives.OurInitiativesFragment"
-        android:label="OurInitiatives"
+        android:label="OurInitiatives graph"
         tools:layout="@layout/fragment_our_initiatives" />
+
+
+
+
 </navigation>

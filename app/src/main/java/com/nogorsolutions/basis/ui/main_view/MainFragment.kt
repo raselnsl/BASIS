@@ -129,6 +129,12 @@ class MainFragment : Fragment() {
         binding.cvOurInitiatives.setOnClickListener {
             findNavController().navigate(R.id.ourInitiativesFragment)
         }
+
+        binding.cvContactUs.setOnClickListener {
+            findNavController().navigate(R.id.contactFragment)
+        }
+
+
     }
 
 }

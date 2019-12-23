@@ -5,6 +5,8 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/nav_main">
 
+
+
     <fragment
         android:id="@+id/nav_login"
         android:name="com.nogorsolutions.basis.ui.login.FragLogin"
@@ -69,7 +71,7 @@
         android:id="@+id/nav_signup"
         tools:layout="@layout/frag_sign_up"
         android:name="com.nogorsolutions.basis.ui.sign_up.SignUpFragment"
-        android:label="SignUpFragment" />
+        android:label="Sign Up" />
     <fragment
         android:id="@+id/ourInitiativesFragment"
         tools:layout="@layout/fragment_our_initiatives"
@@ -105,4 +107,12 @@
         android:name="com.nogorsolutions.basis.ui.DashBoardFragment"
         android:label="fragment_dash_board"
         tools:layout="@layout/fragment_dash_board" />
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.nogorsolutions.basis.ui.ContactFragment"
+        tools:layout="@layout/fragment_contact"
+        android:label="Contact Us" />
+
+
 </navigation>
