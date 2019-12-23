@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:icon="@drawable/twitter"
-        android:title="Profile"/>
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Dashboard" />
 
-    <item android:icon="@drawable/twitter"
-        android:title="Membership"/>
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Company Info" />
 
-    <item android:icon="@drawable/ic_menu_send"
-        android:title="Services"/>
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Company Authority" />
+
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Compliance Info" />
+
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="HR Info" />
+
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Registration Form" />
+
+    <item
+        android:icon="@drawable/step_forward"
+        android:title="Notification" />
 
 </menu>
