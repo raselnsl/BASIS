@@ -325,7 +325,7 @@
                             android:text="About Us"
                             android:textAlignment="center"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -366,7 +366,7 @@
                             android:text="Membership"
                             android:textAlignment="center"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -408,7 +408,7 @@
                             android:text="Services"
                             android:textAlignment="center"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -450,7 +450,7 @@
                             android:text="Resources"
                             android:textAlignment="center"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -491,7 +491,7 @@
                             android:layout_marginTop="16dp"
                             android:text="Our Initiatives"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -531,7 +531,7 @@
                             android:layout_marginTop="16dp"
                             android:text="Contact Us"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
+                            android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -586,12 +586,12 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
-                app:layout_constraintBottom_toTopOf="@id/cvBasisGallery"
+               app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cvWhatsNew"
                 app:reverseLayout="false" />
 
-            <com.google.android.material.card.MaterialCardView
+           <!-- <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cvBasisGallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -632,7 +632,7 @@
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cvBasisGallery"
-                app:spanCount="2" />
+                app:spanCount="2" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

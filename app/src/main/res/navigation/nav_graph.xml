@@ -9,7 +9,7 @@
         android:id="@+id/nav_login"
         android:name="com.nogorsolutions.basis.ui.login.FragLogin"
         android:label="@string/menu_home"
-        tools:layout="@layout/frag_login" >
+        tools:layout="@layout/frag_login">
         <action
             android:id="@+id/action_nav_login_to_signUpFragment"
             app:destination="@id/nav_signup" />
@@ -19,7 +19,7 @@
         android:id="@+id/nav_activity_main"
         android:name="com.nogorsolutions.basis.ui.login.FragLogin"
         android:label="@string/menu_home"
-        tools:layout="@layout/activity_main" >
+        tools:layout="@layout/activity_main">
 
     </fragment>
 
@@ -41,24 +41,24 @@
         tools:layout="@layout/frag_home" />
     <fragment
         android:id="@+id/nav_main"
-        tools:layout="@layout/frag_main"
         android:name="com.nogorsolutions.basis.ui.main_view.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment"
+        tools:layout="@layout/frag_main" />
     <fragment
         android:id="@+id/nav_about_us"
-        tools:layout="@layout/frag_about"
         android:name="com.nogorsolutions.basis.ui.about.AboutFragment"
-        android:label="About Us" />
+        android:label="About Us"
+        tools:layout="@layout/frag_about" />
     <fragment
         android:id="@+id/nav_profile"
-        tools:layout="@layout/frag_profile"
         android:name="com.nogorsolutions.basis.ui.profile.ProfileFragment"
-        android:label="Profile" />
+        android:label="Profile"
+        tools:layout="@layout/frag_profile" />
     <fragment
         android:id="@+id/nav_service"
         android:name="com.nogorsolutions.basis.ui.service.ServiceFrag"
         android:label="frag_service"
-        tools:layout="@layout/frag_service" >
+        tools:layout="@layout/frag_service">
         <action
             android:id="@+id/action_nav_service_to_generalServicesFragment"
             app:destination="@id/nav_generalServices" />
@@ -75,12 +75,12 @@
         tools:layout="@layout/frag_about_bangladesh_ictsector" />
     <fragment
         android:id="@+id/nav_signup"
-        tools:layout="@layout/frag_sign_up"
         android:name="com.nogorsolutions.basis.ui.sign_up.SignUpFragment"
-        android:label="SignUpFragment" />
+        android:label="Sign Up"
+        tools:layout="@layout/frag_sign_up" />
     <fragment
         android:id="@+id/ourInitiativesFragment"
-        tools:layout="@layout/fragment_our_initiatives"
         android:name="com.nogorsolutions.basis.ui.Initiatives.OurInitiativesFragment"
-        android:label="OurInitiativesFragment" />
+        android:label="OurInitiatives"
+        tools:layout="@layout/fragment_our_initiatives" />
 </navigation>

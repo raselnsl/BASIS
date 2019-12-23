@@ -49,14 +49,14 @@ class MainFragment : Fragment() {
 
         }
 
-        binding.rvBasisGallery.also {
+       /* binding.rvBasisGallery.also {
             it.setHasFixedSize(true)
             it.adapter=BASISGalleryRecyclerViewAdapter()
 
             val topSpace = SpacingItemDecoration (8)
             it.addItemDecoration(topSpace)
 
-        }
+        }*/
         return binding.root
     }
 
